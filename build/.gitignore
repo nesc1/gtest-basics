@@ -1,0 +1,10 @@
+debug
+release
+lib
+CMakeCache.txt
+CMakeFiles
+Makefile
+bin
+cmake_install.cmake
+install_manifest.txt
+src
