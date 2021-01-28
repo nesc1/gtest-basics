@@ -25,6 +25,7 @@
             "type": "pickString",
             "description": "Choose the gtest filters:",
             "options": [
+                "*loginTest",
                 "*"
             ]
         }
