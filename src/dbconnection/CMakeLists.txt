@@ -14,7 +14,7 @@ project(
   LANGUAGES CXX)
 
 # exe
-add_executable(${PROJECT_NAME} ${PROJECT_NAME}.cpp)
+add_executable(${PROJECT_NAME} ${PROJECT_NAME}.cpp ${PROJECT_NAME}2.cpp)
 target_link_libraries(${PROJECT_NAME} PUBLIC GTest::Main GTest::GTest
                                              GMock::GMock Boost::filesystem)
 

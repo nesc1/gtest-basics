@@ -2,6 +2,14 @@
 
 GTest and GMock simple tutorial and workplace to experiment with gtest and its functionalities.
 
+## Challenges
+
+### First Challenge
+
+Create a test where the code being test is only the init function and nothing else and the login function must be called when the init funtion is called.
+
+The class under test to use should be now the MyDatabase2
+
 ## Build steps
 
 ### Debug Build

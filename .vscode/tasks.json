@@ -39,7 +39,7 @@
                 "cd debug &&",
                 "rm -rf CMakeFiles &&",
                 "rm -rf CMakeCache* &&",
-                "cmake ../.. -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=../../install"
+                "cmake ../.. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=../../install"
             ],
             "problemMatcher": []
         },

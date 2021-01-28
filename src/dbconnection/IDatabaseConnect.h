@@ -1,11 +1,12 @@
 #pragma once
 #include <string>
+#include <functional>
 
 /// interface class
 class IDatabaseConnect
 {
 public:
-    virtual bool login(std::string user, std::string pass) { return true; }
-    virtual bool logout(std::string user) { return true; }
-    virtual int  fetchRecord() { return -1; }
+    virtual bool login(const std::string& /*user*/, const std::string& /*pass*/) { return true; }
+    virtual bool logout(const std::string& /*user*/) { return true; }
+    virtual int  fetchRecord(const std::string& /*sql*/, std::function<int()> /*cbresult*/) { return -1; }
 };

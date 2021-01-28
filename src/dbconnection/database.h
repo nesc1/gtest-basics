@@ -5,18 +5,18 @@
 /// class under test
 class MyDatabase
 {
-    IDatabaseConnect& db;
+    IDatabaseConnect& m_db;
 
 public:
-    MyDatabase(IDatabaseConnect& _db)
-        : db(_db)
+    explicit MyDatabase(IDatabaseConnect& _db)
+        : m_db(_db)
     {
     }
 
-    int init(std::string user, std::string pwd)
+    int init(const std::string& user, const std::string& pwd)
     {
         int ret = 0;
-        if(!db.login(user, pwd))
+        if(!m_db.login(user, pwd))
         {
             std::cout << "DB failure\n";
             ret = -1;
