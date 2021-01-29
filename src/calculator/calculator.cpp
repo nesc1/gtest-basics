@@ -65,7 +65,7 @@ TEST_P(MainTest, makeMinusCalculation)
 // clang-format off
 INSTANTIATE_TEST_SUITE_P(ExampleListOfTests,
                          MainTest,
-                         ::testing::Values(
+                         ::testing::Values
     (
         // Case 1: normal sum
         TestInputOutput
@@ -82,5 +82,5 @@ INSTANTIATE_TEST_SUITE_P(ExampleListOfTests,
             1023, 977
         }
     )
-));
+);
 // clang-format on
