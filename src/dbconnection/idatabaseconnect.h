@@ -2,7 +2,7 @@
 #include <string>
 #include <functional>
 
-/// interface class
+/// interface class for a database connection
 class IDatabaseConnect
 {
 public:

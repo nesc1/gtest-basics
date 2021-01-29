@@ -1,10 +1,10 @@
 #pragma once
 #include <iostream>
 #include <memory>
-#include "IDatabaseConnect.h"
+#include "idatabaseconnect.h"
 
 /// class under test for first challenge
-class MyDatabase2
+class MyDbClient2
 {
 private:
     std::shared_ptr<IDatabaseConnect> m_db;

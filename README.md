@@ -6,9 +6,13 @@ GTest and GMock simple tutorial and workplace to experiment with gtest and its f
 
 ### First Challenge
 
-Create a test where the code being test is only the init function and nothing else and the login function must be called when the init funtion is called.
+Using the `dbconnection` project  do:
 
-The class under test to use should be now the MyDatabase2
+- a test where the code being test is only the init function and nothing else and the login function must be called when the init funtion is called
+
+`Note1:` class under test is now the `MyDbClient2` and the mock class is still the same one (`MockDatabaseConnect`)
+
+`Note2:` start your implementation on `dbconnection2.cpp`
 
 ## Build steps
 

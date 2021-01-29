@@ -2,12 +2,12 @@
 #include <gmock/gmock.h>
 #include <string>
 
-#include "IDatabaseConnect.h"
+#include "idatabaseconnect.h"
 
 /// mock class (of interface class)
 /// we can also mocking wihout deriving from class doing only:
 /// class DatabaseConnect { }  << this will obligate to not include the real code
-class MockDB : public IDatabaseConnect
+class MockDatabaseConnect : public IDatabaseConnect
 {
 public:
     MOCK_METHOD2(fetchRecord, int(const std::string&, std::function<int()>));

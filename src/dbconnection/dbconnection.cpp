@@ -2,8 +2,8 @@
 #include <gtest/gtest.h>
 #include <iostream>
 
-#include "mockclass.h"
-#include "database.h"
+#include "mockdatabaseconnect.h"
+#include "mydbclient.h"
 
 using namespace std;
 using ::testing::_;
@@ -18,8 +18,8 @@ using ::testing::Return;
 TEST(MyDBTest, loginTest)
 {
     // prepare
-    MockDB     mdb;
-    MyDatabase db(mdb);
+    MockDatabaseConnect mdb;
+    MyDbClient          db(mdb);
 
     // EXPECT_CALL and ON_CALL differs from requirement, expect requires to happen while on_call no
     EXPECT_CALL(mdb, login("Terminator", _))
@@ -44,8 +44,8 @@ TEST(MyDBTest, loginTest)
 class MyTestFixtureForDB : public ::testing::Test
 {
 public:
-    MockDB     mdb;
-    MyDatabase db;
+    MockDatabaseConnect mdb;
+    MyDbClient          db;
 
     MyTestFixtureForDB()
         : db(mdb)

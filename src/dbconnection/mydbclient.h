@@ -1,14 +1,17 @@
 #pragma once
 #include <iostream>
-#include "IDatabaseConnect.h"
+#include "idatabaseconnect.h"
 
 /// class under test
-class MyDatabase
+/// it simulates a client that performs a connection to a database
+/// the interface with the database is offered by the interface IDatabaseConnect
+class MyDbClient
 {
+private:
     IDatabaseConnect& m_db;
 
 public:
-    explicit MyDatabase(IDatabaseConnect& _db)
+    explicit MyDbClient(IDatabaseConnect& _db)
         : m_db(_db)
     {
     }
