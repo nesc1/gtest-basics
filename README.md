@@ -14,6 +14,17 @@ Using the `dbconnection` project  do:
 
 `Note2:` start your implementation on `dbconnection2.cpp`
 
+### Second challenge
+
+On the project `calculator` complete the calculator functionality with multiplication and division operations.
+
+`Note:` you can change the types that hold the input and output if desired. The main idea is to have several inputs and one or more tests testing these inputs and executing all four operations:
+
+- addition,
+- subtraction,
+- multiplication and
+- division
+
 ## Build steps
 
 ### Debug Build
