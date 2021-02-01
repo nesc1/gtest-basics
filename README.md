@@ -8,7 +8,7 @@ GTest and GMock simple tutorial and workplace to experiment with gtest and its f
 
 Using the `dbconnection` project  do:
 
-- a test where the code being test is only the init function and nothing else and the login function must be called when the init funtion is called
+* a test where the code being test is only the init function and nothing else and the login function must be called when the init funtion is called
 
 `Note1:` class under test is now the `MyDbClient2` and the mock class is still the same one (`MockDatabaseConnect`)
 
@@ -20,10 +20,22 @@ On the project `calculator` complete the calculator functionality with multiplic
 
 `Note:` you can change the types that hold the input and output if desired. The main idea is to have several inputs and one or more tests testing these inputs and executing all four operations:
 
-- addition,
-- subtraction,
-- multiplication and
-- division
+* addition,
+* subtraction,
+* multiplication and
+* division
+
+### Third challenge
+
+On this third challenge the objective is to create a new project named `regextests` where the aim of each unit test is to test several regex expressions against several input strings.
+
+**Suggestion:** use at least one or all of the following functionality:
+
+* regex_match
+* regex_search
+* regex_replace
+
+(use the knowledge that you learn so far on building your unit tests)
 
 ## Build steps
 
