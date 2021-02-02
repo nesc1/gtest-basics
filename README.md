@@ -37,6 +37,19 @@ On this third challenge the objective is to create a new project named `regextes
 
 (use the knowledge that you learn so far on building your unit tests)
 
+### Fourth Challenge
+
+Using the `dbconnection` project:
+
+* create one or more tests to validate the `execute` database use case by testing the `MyDbClient2::execute` method for the following two cases:
+
+  - where `IDatabaseConnect::fetchRecord` return a valid record
+  - and when `IDatabaseConnect::fetchRecord` return an invalid record
+
+`Note1:` class under test is the `MyDbClient2` and the mock class is still the same one (`MockDatabaseConnect`)
+
+`Note2:` start your implementation on `dbconnection3.cpp`
+
 ## Build steps
 
 ### Debug Build

@@ -10,7 +10,7 @@
 class MockDatabaseConnect : public IDatabaseConnect
 {
 public:
-    MOCK_METHOD2(fetchRecord, int(const std::string&, std::function<int()>));
+    MOCK_METHOD2(fetchRecord, void(const std::string&, FetchCb));
     MOCK_METHOD1(logout, bool(const std::string&));
     MOCK_METHOD2(login, bool(const std::string&, const std::string&));
 };
